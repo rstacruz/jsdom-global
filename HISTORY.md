@@ -1,3 +1,10 @@
+## [v1.2.0]
+> Jan 11, 2016
+
+- Fix compatibility with legacy Node.js versions.
+
+[v1.2.0]: https://github.com/rstacruz/jsdom-global/compare/v1.1.0...v1.2.0
+
 ## [v1.1.0]
 > Jan 11, 2016
 
