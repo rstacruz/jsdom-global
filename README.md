@@ -110,8 +110,9 @@ If you use [Browserify] on your tests (eg: [smokestack], [tape-run], [budo], [hi
 * Running it with [smokestack]:
 
   ```sh
-  browserify test.js | smokestack  # run in a browser
-  node test.js                     # or the console
+  browserify test.js | smokestack          # run in a browser
+  node test.js                             # or the console
+  browserify test.js --no-bundle-external  # also works (but why bother?)
   ```
 
 * Running it with Babel ([babelify] or [babel-cli]):
