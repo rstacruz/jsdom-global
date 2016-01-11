@@ -2,7 +2,7 @@
 
 > Enables DOM in Node.js
 
-jsdom-global will inject `document`, `window` and other DOM API into your Node.js environment. Useful for tests.
+jsdom-global will inject `document`, `window` and other DOM API into your Node.js environment. Useful for running, in Node.js, tests that are made for browsers.
 
 [![Status](https://travis-ci.org/rstacruz/jsdom-global.svg?branch=master)](https://travis-ci.org/rstacruz/jsdom-global "See test builds")
 
