@@ -30,8 +30,7 @@ document.body.innerHTML = 'hello'
 To clean up after itself, just invoke the function it returns.
 
 ```js
-var jsdom = require('jsdom-global')
-var cleanup = jsdom()
+var cleanup = require('jsdom-global')()
 
 // do things
 
@@ -41,6 +40,8 @@ cleanup()
 You can also invoke it with a function block so it'll clean up afterwards.
 
 ```js
+var jsdom = require('jsdom-global')
+
 jsdom(function () {
   var $ = require('jquery')
   $('body').html('hello')
