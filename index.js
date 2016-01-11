@@ -30,7 +30,7 @@ function globalize () {
   var window = document.defaultView
   var keys = []
 
-  Object.keys(window).forEach((key) => {
+  Object.keys(window).forEach(function (key) {
     if (blacklist.indexOf(key) !== -1) return
     keys.push(key)
     global[key] = window[key]
