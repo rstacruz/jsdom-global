@@ -90,6 +90,27 @@ after(function () {
 [tape]: https://github.com/substack/tape
 [mocha]: https://mochajs.org/
 
+## Browserify
+
+If you use Browserify on your tests (eg: [tape-run], [budo], [hihat], [zuul], and so on), doing `require('jsdom-global')()` is a noop. In practice, this means you can use jsdom-global even if your tests are powered by browserify, and your test will now work in both the browser and Node.
+
+[zuul]: https://www.npmjs.com/package/zuul
+[tape-run]: https://www.npmjs.com/package/tape-run
+[budo]: https://github.com/mattdesl/budo
+[hihat]: https://www.npmjs.com/package/hihat
+
+```js
+// test.js - use jsdom-global
+require('jsdom-global')()
+
+// do your tests here
+```
+
+```sh
+browserify test.js | tape-run   # run in a browser
+browserify test.js | node       # run in node
+```
+
 ## Thanks
 
 **jsdom-global** © 2016+, Rico Sta. Cruz. Released under the [MIT] License.<br>
