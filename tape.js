@@ -4,7 +4,7 @@
 
 module.exports = function (options) {
   return function (t) {
-    require('./index')()
+    require('./index')(options)
     t.pass('jsdom on')
     t.end()
   }
