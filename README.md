@@ -28,6 +28,17 @@ jsdom()
 document.body.innerHTML = 'hello'
 ```
 
+To clean up after itself, just invoke the function it returns.
+
+```js
+var jsdom = require('jsdom-global')
+var cleanup = jsdom()
+
+// do things
+
+cleanup()
+```
+
 You can also invoke it with a function block so it'll clean up afterwards.
 
 ```js
@@ -36,6 +47,8 @@ jsdom(function () {
   $('body').html('hello')
 })
 ```
+
+## Tape
 
 In [tape][], run it before your other tests.
 
@@ -60,8 +73,22 @@ var test = require('tape')
 test('jsdom', require('jsdom-global/tape')())
 ```
 
+## Mocha
+
+Just add it to [mocha]'s `before` and `after` hooks.
+
+```js
+before(function () {
+  this.jsdom = require('jsdom-global')()
+})
+
+after(function () {
+  this.jsdom()
+})
+```
 
 [tape]: https://github.com/substack/tape
+[mocha]: https://mochajs.org/
 
 ## Thanks
 

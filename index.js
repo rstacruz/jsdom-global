@@ -5,10 +5,10 @@
 module.exports = function globalJsdom (func) {
   if (typeof func === 'function') {
     try {
-      var keys = globalize()
+      var cleanup = globalize()
       return func()
     } finally {
-      keys.forEach(function (key) { delete global[key] })
+      cleanup()
     }
   } else {
     return globalize()
@@ -39,5 +39,10 @@ function globalize () {
   global.document = document
   global.window = window
   window.console = global.console
-  return keys
+
+  function cleanup () {
+    keys.forEach(function (key) { delete global[key] })
+  }
+
+  return cleanup
 }
