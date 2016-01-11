@@ -3,6 +3,7 @@
   "version": "1.2.0",
   "description": "Enable DOM in Node.js",
   "main": "index.js",
+  "browser": "browser.js",
   "scripts": {
     "test": "node test.js"
   },
