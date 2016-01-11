@@ -108,7 +108,7 @@ require('jsdom-global')()
 
 ```sh
 browserify test.js | tape-run   # run in a browser
-browserify test.js | node       # run in node
+node test.js                    # or the console
 ```
 
 ## Thanks
