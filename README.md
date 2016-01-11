@@ -21,8 +21,7 @@ npm install --save-dev --save-exact jsdom jsdom-global
 Just invoke it to turn your Node.js environment into a DOM environment.
 
 ```js
-var jsdom = require('jsdom-global')
-jsdom()
+require('jsdom-global')()
 
 // you can now use the DOM
 document.body.innerHTML = 'hello'
