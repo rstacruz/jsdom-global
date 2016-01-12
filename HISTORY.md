@@ -1,3 +1,10 @@
+## [v1.5.0]
+> Jan 12, 2016
+
+- Remove tape integration... we don't need it.
+
+[v1.5.0]: https://github.com/rstacruz/jsdom-global/compare/v1.4.0...v1.5.0
+
 ## [v1.4.0]
 > Jan 12, 2016
 
