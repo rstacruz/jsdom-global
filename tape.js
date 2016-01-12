@@ -5,7 +5,7 @@
 module.exports = function (options) {
   return function (t) {
     require('./index')(options)
-    t.pass('jsdom on')
+    t.pass(navigator.userAgent)
     t.end()
   }
 }
