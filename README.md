@@ -60,18 +60,6 @@ test('your tests', (t) => {
 })
 ```
 
-_Optional:_ you can also use the tape helper, which will add jsdom initialization to the tap output, letting you see how long it takes to bootstrap the jsdom environment.
-
-```js
-var test = require('tape')
-test('jsdom', require('jsdom-global/tape')())
-
-// TAP version 13
-// # jsdom
-// ok 1 jsdom enabled
-// ...
-```
-
 ## Mocha
 
 Just add it to [mocha]'s `before` and `after` hooks.
