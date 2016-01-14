@@ -1,3 +1,11 @@
+## [v1.6.0]
+> Jan 15, 2016
+
+- Make `jsdomGlobal()` idempotent - that is, you may call it twice and expect
+the same result without any side effects.
+
+[v1.6.0]: https://github.com/rstacruz/jsdom-global/compare/v1.5.0...v1.6.0
+
 ## [v1.5.0]
 > Jan 12, 2016
 
