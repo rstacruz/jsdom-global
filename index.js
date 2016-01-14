@@ -25,6 +25,13 @@ module.exports = function globalJsdom (func) {
 }
 
 function globalize () {
+  // Idempotency
+  if (global.navigator &&
+    global.navigator.userAgent &&
+    global.navigator.userAgent.indexOf('Node.js') > -1) {
+    return document.destroy
+  }
+
   var jsdom = require('jsdom')
   var document = jsdom.jsdom(html)
   var window = document.defaultView
@@ -39,6 +46,7 @@ function globalize () {
   global.document = document
   global.window = window
   window.console = global.console
+  document.destroy = cleanup
 
   function cleanup () {
     keys.forEach(function (key) { delete global[key] })
