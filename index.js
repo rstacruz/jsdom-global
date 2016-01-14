@@ -28,8 +28,10 @@ function globalize () {
   // Idempotency
   if (global.navigator &&
     global.navigator.userAgent &&
-    global.navigator.userAgent.indexOf('Node.js') > -1) {
-    return document.destroy
+    global.navigator.userAgent.indexOf('Node.js') > -1 &&
+    global.document &&
+    typeof global.document.destroy === 'function') {
+    return global.document.destroy
   }
 
   var jsdom = require('jsdom')
