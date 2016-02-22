@@ -37,17 +37,6 @@ var cleanup = require('jsdom-global')()
 cleanup()
 ```
 
-You can also invoke it with a function block so it'll clean up afterwards.
-
-```js
-var jsdom = require('jsdom-global')
-
-jsdom(function () {
-  var $ = require('jquery')
-  $('body').html('hello')
-})
-```
-
 ## Tape
 
 In [tape][], run it before your other tests.
