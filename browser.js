@@ -4,7 +4,7 @@
  */
 
 module.exports = function (fn) {
-  if (typeof func === 'function') return fn()
+  if (typeof fn === 'function') return fn()
   return noop
 }
 

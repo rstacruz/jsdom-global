@@ -1,3 +1,10 @@
+## [v1.6.2]
+> Feb 22, 2016
+
+- Fix typo in browser.js.
+
+[v1.6.2]: https://github.com/rstacruz/jsdom-global/compare/v1.6.1...v1.6.2
+
 ## [v1.6.1]
 > Jan 15, 2016
 
