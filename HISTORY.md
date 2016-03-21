@@ -1,3 +1,10 @@
+## [v1.7.0]
+> Mar 21, 2016
+
+- Implement `jsdom-global/register` for use in simpler cases.
+
+[v1.7.0]: https://github.com/rstacruz/jsdom-global/compare/v1.6.2...v1.7.0
+
 ## [v1.6.2]
 > Feb 22, 2016
 
