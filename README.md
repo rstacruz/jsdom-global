@@ -51,7 +51,13 @@ test('your tests', (t) => {
 
 ## Mocha
 
-Just add it to [mocha]'s `before` and `after` hooks.
+__Simple:__ Use Mocha's `--require` option. Add this to the `test/mocha.opts` file (create it if it doesn't exist)
+
+```
+-r jsdom-global/register
+```
+
+__Advanced:__ For finer control, you can instead add it via [mocha]'s `before` and `after` hooks.
 
 ```js
 before(function () {
