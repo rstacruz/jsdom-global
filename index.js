@@ -2,7 +2,7 @@
  * enables jsdom globally.
  */
 
-var html = '<!doctype html><html><head><meta charset="utf-8">' +
+var defaultHtml = '<!doctype html><html><head><meta charset="utf-8">' +
   '</head><body></body></html>'
 
 var blacklist = [
@@ -11,20 +11,15 @@ var blacklist = [
   'Float64Array', 'toString', 'constructor', 'console', 'setTimeout',
   'clearTimeout', 'setInterval', 'clearInterval' ]
 
-module.exports = function globalJsdom (func) {
-  if (typeof func === 'function') {
-    try {
-      var cleanup = globalize()
-      return func()
-    } finally {
-      cleanup()
-    }
-  } else {
-    return globalize()
+module.exports = function globalJsdom (html, options) {
+  if (html === undefined) {
+    html = defaultHtml
   }
-}
 
-function globalize () {
+  if (options === undefined) {
+    options = {}
+  }
+
   // Idempotency
   if (global.navigator &&
     global.navigator.userAgent &&
@@ -35,7 +30,7 @@ function globalize () {
   }
 
   var jsdom = require('jsdom')
-  var document = jsdom.jsdom(html)
+  var document = jsdom.jsdom(html, options)
   var window = document.defaultView
   var keys = []
 
