@@ -3,8 +3,7 @@
  * no need to bootstrap a DOM environment in a browser.
  */
 
-module.exports = function (fn) {
-  if (typeof fn === 'function') return fn()
+module.exports = function () {
   return noop
 }
 
