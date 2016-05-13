@@ -1,3 +1,11 @@
+## [v2.0.0]
+> May 13, 2016
+
+- [#3] - Allow overriding `html` and `options` being passed to jsdom. ([#5], [@kenjiru])
+- Deprecate the undocumented (and never-used) feature of calling `jsdom(function)`.
+
+[v2.0.0]: https://github.com/rstacruz/jsdom-global/compare/v1.7.0...v2.0.0
+
 ## [v1.7.0]
 > Mar 21, 2016
 
@@ -61,3 +69,8 @@ the same result without any side effects.
 - Initial release.
 
 [v1.0.0]: https://github.com/rstacruz/jsdom-global/tree/v1.0.0
+[#3]: https://github.com/rstacruz/jsdom-global/issues/3
+[#5]: https://github.com/rstacruz/jsdom-global/issues/5
+[#2]: https://github.com/rstacruz/jsdom-global/issues/2
+[@kenjiru]: https://github.com/kenjiru
+[@ngryman]: https://github.com/ngryman
