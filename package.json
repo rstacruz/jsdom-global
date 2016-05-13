@@ -24,6 +24,7 @@
   "homepage": "https://github.com/rstacruz/jsdom-global#readme",
   "devDependencies": {
     "jsdom": "7.2.2",
+    "standard": "^7.0.1",
     "tape": "4.4.0"
   }
 }
