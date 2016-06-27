@@ -21,13 +21,13 @@ npm install --save-dev --save-exact jsdom jsdom-global
 Just invoke it to turn your Node.js environment into a DOM environment.
 
 ```js
-require('jsdom-global')(html, options)
+require('jsdom-global')()
 
 // you can now use the DOM
 document.body.innerHTML = 'hello'
 ```
 
-Both `html` and `options` parameters are optional.
+You may also pass parameters to jsdomGlobal() like so: `require('jsdom-global')(html, options)`.
 Check the [jsdom.jsdom()][] documentation for valid values for the `options` parameter.
 
 To clean up after itself, just invoke the function it returns.
