@@ -76,6 +76,17 @@ after(function () {
 [mocha]: https://mochajs.org/
 [jsdom.jsdom()]: https://github.com/tmpvar/jsdom/#for-the-hardcore-jsdomjsdom
 
+## ES2015
+
+If you prefer to use `import` rather that `require`, you might want to use `jsdom-global/register` instead. Place it on top of your other import calls.
+
+```js
+import 'jsdom-global/register'
+import React from 'react'
+import jQuery from 'jquery'
+// ...
+```
+
 ## Browserify
 
 If you use [Browserify] on your tests (eg: [smokestack], [tape-run], [budo], [hihat], [zuul], and so on), doing `require('jsdom-global')()` is a noop. In practice, this means you can use jsdom-global even if your tests are powered by browserify, and your test will now work in both the browser and Node.
