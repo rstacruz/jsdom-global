@@ -1,3 +1,10 @@
+## [v2.1.0]
+> Aug 22, 2016
+
+- [#6], [#7] - Fix support for jsdom 9.4.0.
+
+[v2.1.0]: https://github.com/rstacruz/jsdom-global/compare/v2.0.0...v2.1.0
+
 ## [v2.0.0]
 > May 13, 2016
 
@@ -71,6 +78,8 @@ the same result without any side effects.
 [v1.0.0]: https://github.com/rstacruz/jsdom-global/tree/v1.0.0
 [#3]: https://github.com/rstacruz/jsdom-global/issues/3
 [#5]: https://github.com/rstacruz/jsdom-global/issues/5
+[#6]: https://github.com/rstacruz/jsdom-global/issues/6
+[#7]: https://github.com/rstacruz/jsdom-global/issues/7
 [#2]: https://github.com/rstacruz/jsdom-global/issues/2
 [@kenjiru]: https://github.com/kenjiru
 [@ngryman]: https://github.com/ngryman
