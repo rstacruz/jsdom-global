@@ -2,14 +2,10 @@
  * enables jsdom globally.
  */
 
+var KEYS = require('./keys')
+
 var defaultHtml = '<!doctype html><html><head><meta charset="utf-8">' +
   '</head><body></body></html>'
-
-var blacklist = [
-  'ArrayBuffer', 'Int8Array', 'Uint8Array', 'Uint8ClampedArray',
-  'Int16Array', 'Uint16Array', 'Int32Array', 'Uint32Array', 'Float32Array',
-  'Float64Array', 'toString', 'constructor', 'console', 'setTimeout',
-  'clearTimeout', 'setInterval', 'clearInterval' ]
 
 module.exports = function globalJsdom (html, options) {
   if (html === undefined) {
@@ -32,11 +28,8 @@ module.exports = function globalJsdom (html, options) {
   var jsdom = require('jsdom')
   var document = jsdom.jsdom(html, options)
   var window = document.defaultView
-  var keys = []
 
-  Object.keys(window).forEach(function (key) {
-    if (blacklist.indexOf(key) !== -1) return
-    keys.push(key)
+  KEYS.forEach(function (key) {
     global[key] = window[key]
   })
 
@@ -46,7 +39,7 @@ module.exports = function globalJsdom (html, options) {
   document.destroy = cleanup
 
   function cleanup () {
-    keys.forEach(function (key) { delete global[key] })
+    KEYS.forEach(function (key) { delete global[key] })
   }
 
   return cleanup
