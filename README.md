@@ -78,7 +78,7 @@ after(function () {
 
 ## ES2015
 
-If you prefer to use `import` rather that `require`, you might want to use `jsdom-global/register` instead. Place it on top of your other import calls.
+If you prefer to use `import` rather than `require`, you might want to use `jsdom-global/register` instead. Place it on top of your other import calls.
 
 ```js
 import 'jsdom-global/register'
