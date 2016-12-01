@@ -13,6 +13,7 @@ var LIVING_KEYS = [
   'DocumentType',
   'DOMImplementation',
   'ProcessingInstruction',
+  'Image',
   'Text',
   'Event',
   'CustomEvent',
