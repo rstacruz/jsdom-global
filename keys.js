@@ -119,6 +119,7 @@ var LIVING_KEYS = [
   'File',
   'FileList',
   'FormData',
+  'XMLHttpRequest',
   'XMLHttpRequestEventTarget',
   'XMLHttpRequestUpload',
   'DOMTokenList',
