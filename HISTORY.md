@@ -1,3 +1,10 @@
+## [v2.1.1]
+> Dec 24, 2016
+
+- [#11] - Fix issues with XMLHttpRequest.
+
+[v2.1.1]: https://github.com/rstacruz/jsdom-global/compare/v2.1.0...v2.1.1
+
 ## [v2.1.0]
 > Aug 22, 2016
 
@@ -81,5 +88,6 @@ the same result without any side effects.
 [#6]: https://github.com/rstacruz/jsdom-global/issues/6
 [#7]: https://github.com/rstacruz/jsdom-global/issues/7
 [#2]: https://github.com/rstacruz/jsdom-global/issues/2
+[#11]: https://github.com/rstacruz/jsdom-global/issues/11
 [@kenjiru]: https://github.com/kenjiru
 [@ngryman]: https://github.com/ngryman
