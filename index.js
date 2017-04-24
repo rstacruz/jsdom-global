@@ -26,7 +26,7 @@ module.exports = function globalJsdom (html, options) {
   }
 
   var jsdom = require('jsdom')
-  var document = jsdom.jsdom(html, options)
+  var document = jsdom.JSDOM(html, options)
   var window = document.defaultView
 
   KEYS.forEach(function (key) {

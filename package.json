@@ -1,6 +1,6 @@
 {
   "name": "jsdom-global",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "Enable DOM in Node.js",
   "main": "index.js",
   "browser": "browser.js",
@@ -23,8 +23,8 @@
   },
   "homepage": "https://github.com/rstacruz/jsdom-global#readme",
   "devDependencies": {
-    "jsdom": "9.0.0",
-    "standard": "7.0.1",
-    "tape": "4.4.0"
+    "jsdom": "~10.0.0",
+    "standard": "~10.0.2",
+    "tape": "~4.6.3"
   }
 }
