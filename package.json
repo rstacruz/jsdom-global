@@ -1,6 +1,6 @@
 {
   "name": "jsdom-global",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Enable DOM in Node.js",
   "main": "index.js",
   "browser": "browser.js",

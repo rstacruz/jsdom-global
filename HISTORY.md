@@ -1,9 +1,16 @@
+## [v3.0.1]
+> May  8, 2017
+
+- [#17] - Fix issue with `Image`. ([@jtag05])
+
+[v3.0.1]: https://github.com/rstacruz/jsdom-global/compare/v3.0.0...v3.0.1
+
 ## [v3.0.0]
 > May  8, 2017
 
-- jsdom-global now requires jsdom v10.
+- [#23] - jsdom-global now requires jsdom v10. ([@GinjiBan])
 
-[v3.00]: https://github.com/rstacruz/jsdom-global/compare/v2.1.1...v3.0.0
+[v3.0.0]: https://github.com/rstacruz/jsdom-global/compare/v2.1.1...v3.0.0
 
 ## [v2.1.1]
 > Dec 24, 2016
@@ -96,5 +103,8 @@ the same result without any side effects.
 [#7]: https://github.com/rstacruz/jsdom-global/issues/7
 [#2]: https://github.com/rstacruz/jsdom-global/issues/2
 [#11]: https://github.com/rstacruz/jsdom-global/issues/11
+[#23]: https://github.com/rstacruz/jsdom-global/issues/23
 [@kenjiru]: https://github.com/kenjiru
 [@ngryman]: https://github.com/ngryman
+[@GinjiBan]: https://github.com/GinjiBan
+[@jtag05]: https://github.com/jtag05
