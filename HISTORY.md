@@ -1,9 +1,10 @@
-## [v3.0.1]
+## [v3.0.2]
 > May  8, 2017
 
 - [#17] - Fix issue with `Image`. ([@jtag05])
+- [#16] - Mark jsdom as a peer dependency.
 
-[v3.0.1]: https://github.com/rstacruz/jsdom-global/compare/v3.0.0...v3.0.1
+[v3.0.2]: https://github.com/rstacruz/jsdom-global/compare/v3.0.0...v3.0.2
 
 ## [v3.0.0]
 > May  8, 2017
@@ -103,6 +104,8 @@ the same result without any side effects.
 [#7]: https://github.com/rstacruz/jsdom-global/issues/7
 [#2]: https://github.com/rstacruz/jsdom-global/issues/2
 [#11]: https://github.com/rstacruz/jsdom-global/issues/11
+[#16]: https://github.com/rstacruz/jsdom-global/issues/16
+[#17]: https://github.com/rstacruz/jsdom-global/issues/17
 [#23]: https://github.com/rstacruz/jsdom-global/issues/23
 [@kenjiru]: https://github.com/kenjiru
 [@ngryman]: https://github.com/ngryman
