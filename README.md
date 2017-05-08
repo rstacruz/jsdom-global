@@ -16,6 +16,10 @@ npm install --save-dev --save-exact jsdom jsdom-global
 
 [jsdom]: https://github.com/tmpvar/jsdom
 
+## Note
+
+jsdom-global now requires jsdom v10 or above. If you need jsdom v9 and below, use the previous version (`jsdom-global@2`).
+
 ## Usage
 
 Just invoke it to turn your Node.js environment into a DOM environment.

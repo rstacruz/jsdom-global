@@ -1,3 +1,10 @@
+## [v3.0.0]
+> May  8, 2017
+
+- jsdom-global now requires jsdom v10.
+
+[v3.00]: https://github.com/rstacruz/jsdom-global/compare/v2.1.1...v3.0.0
+
 ## [v2.1.1]
 > Dec 24, 2016
 
