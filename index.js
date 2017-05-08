@@ -26,14 +26,14 @@ module.exports = function globalJsdom (html, options) {
   }
 
   var jsdom = require('jsdom')
-  var document = jsdom.jsdom(html, options)
-  var window = document.defaultView
+  var document = new jsdom.JSDOM(html, options)
+  var window = document.window
 
   KEYS.forEach(function (key) {
     global[key] = window[key]
   })
 
-  global.document = document
+  global.document = window.document
   global.window = window
   window.console = global.console
   document.destroy = cleanup
